@@ -1,10 +1,127 @@
-<!DOCTYPE html>
-<html lang="id">
-<head>
-    <title>Web POS - Ina Baby & Kids</title>
-</head>
-<body>
-    <h1>Selamat Datang</h1>
-    <div style="width: 100vw; height: 100vh; background: #F4F4F4; display: block;"></div>
-</body>
-</html>
+    <!DOCTYPE html>
+    <html lang="id">
+    <head>
+        <title>Web POS - Ina Baby & Kids</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito">
+        <style>
+            body {
+                font-family: 'Nunito', sans-serif;
+                margin: 0;
+                padding: 0;
+                display: flex;
+                flex-direction: column;
+                min-height: 100vh; /* Membuat body setidaknya setinggi viewport */
+            }
+
+            main {
+                max-width: 800px;
+                margin: 10px auto;
+                margin-left: 15px;
+                margin-top: 0;
+                flex: 1;
+                padding: 10px;
+                background-color: #fff;
+                box-shadow: 0 0 0 rgba(0, 0, 0, 0.1);
+            }
+
+            footer {
+                text-align: left;
+                padding: 1em;
+                background-color: #f5f5f5;
+                color: black;
+                margin-top: auto; /* Menempatkan footer di bagian bawah */
+            }
+
+            .judul-h1 {
+                font-size: 20px; /* Atur ukuran sesuai keinginan */
+                margin-bottom: 0;
+            }
+
+            .footer-text {
+                margin-left: 10px;
+            }
+
+            .textbox-container {
+                margin-bottom: 3px;
+            }
+
+            .textbox-margin{
+                margin-left: 10px;
+            }
+
+            .column-container {
+            display: flex;
+            }
+
+            #tanggal,
+            #kasir,
+            #pembayaran {
+
+                padding: 5px;
+                border: 1px solid #ccc;
+                border-radius: 8px; /* Membuat sudut lebih bundar */
+                background-color: #f2f2f2; /* Mengubah warna latar belakang */
+            }
+
+            #kasir,
+            #tanggal{
+                width: 150px;
+            }
+            #pembayaran{
+                width: 162px;
+            }
+            #amount,
+            #discount{
+                width: 50px;
+            }
+            #code,
+            #stuffname{
+                width: 50em;
+            }
+
+            .margin-heading{
+                margin-bottom: 10px;
+            }
+     
+
+        </style>
+    </head>
+
+    <body>
+        <main>
+            <div class="margin-heading"><h1 class="judul-h1">Web POS - Ina Baby & Kids</h1></div>
+          
+            <div class="textbox-container">
+                <input type="text" id="kasir" name="kasir" placeholder="Kasir">
+            </div>
+
+            <div class="textbox-container">
+                <input type="date" id="tanggal" name="tanggal ">
+            </div>
+
+            <div class="textbox-container">
+                <select id="pembayaran" name="pembayaran">
+                    <option value="tunai">Tunai</option>
+                    <option value="nontunai">Non-Tunai</option>
+                </select>
+            </div>
+
+            <div class="column-container">
+                <input type="number" id="amount" name="amount">
+                <input type="text" id="code" name="code" placeholder="Kode disini">
+                <input type="text" id="stuffname" name="stuffname">
+                <input type="number" id="price" name="price">
+                <input type="number" id="discount" name="discount">
+                <input type="number" id="subtotal" name="subtotal">
+            </div>
+            
+            
+    
+
+        </main>
+
+        <footer>
+           <span class="footer-text"> &copy; 2024 Ina Baby &amp; Kids</span>
+        </footer>   
+    </body>
+    </html>
