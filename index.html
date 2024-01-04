@@ -50,13 +50,16 @@
             }
 
             .column-container {
-            display: flex;
+                display: flex;
+            }
+
+            .textbox-font{
+                font-family: Nunito;
             }
 
             #tanggal,
             #kasir,
             #pembayaran {
-
                 padding: 5px;
                 border: 1px solid #ccc;
                 border-radius: 8px; /* Membuat sudut lebih bundar */
@@ -92,31 +95,28 @@
             <div class="margin-heading"><h1 class="judul-h1">Web POS - Ina Baby & Kids</h1></div>
           
             <div class="textbox-container">
-                <input type="text" id="kasir" name="kasir" placeholder="Kasir">
+                <input type="text" class="textbox-font" id="kasir" name="kasir" placeholder="Kasir">
             </div>
 
             <div class="textbox-container">
-                <input type="date" id="tanggal" name="tanggal ">
+                <input type="date" class="textbox-font" id="tanggal" name="tanggal ">
             </div>
 
             <div class="textbox-container">
-                <select id="pembayaran" name="pembayaran">
+                <select class="textbox-font" id="pembayaran" name="pembayaran">
                     <option value="tunai">Tunai</option>
                     <option value="nontunai">Non-Tunai</option>
                 </select>
             </div>
 
             <div class="column-container">
-                <input type="number" id="amount" name="amount">
-                <input type="text" id="code" name="code" placeholder="Kode disini">
-                <input type="text" id="stuffname" name="stuffname">
-                <input type="number" id="price" name="price">
-                <input type="number" id="discount" name="discount">
-                <input type="number" id="subtotal" name="subtotal">
+                <input type="number" class="textbox-font" id="amount" name="amount">
+                <input type="text" class="textbox-font" id="code" name="code" placeholder="Kode disini">
+                <input type="text" class="textbox-font" id="stuffname" name="stuffname">
+                <input type="number" class="textbox-font" id="price" name="price">
+                <input type="number" class="textbox-font" id="discount" name="discount">
+                <input type="number" class="textbox-font" id="subtotal" name="subtotal">
             </div>
-            
-            
-    
 
         </main>
 
