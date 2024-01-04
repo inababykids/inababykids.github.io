@@ -20,7 +20,9 @@ function validateLogin(event) {
             if (userExists) {
                 // Pengguna berhasil login
                 alert('Login berhasil!');
-                // Tambahkan logika pengalihan halaman atau aksi lainnya di sini
+                
+                // Pengalihan halaman
+                window.location.href = '/index.html';
             } else {
                 // Kredensial tidak valid
                 alert('Login gagal. Kredensial tidak valid.');
