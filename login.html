@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <title>Web POS - Login Page</title>
+    <title>Login Page</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito">
     <style>
         body {
@@ -64,11 +64,12 @@
     <script>
         function validateLogin() {
             // Ambil data dari Google Sheets API
-            const apiKey = '<AIzaSyBKTs08rp18jacSVRdE1HGpgHAdGyqBXkQ>';
-            const spreadsheetId = '<1F5voYTnm3e-1h3iulQf4TXdHi9__u6WJTQe15l_haZ0>';
+            const apiKey = 'AIzaSyBKTs08rp18jacSVRdE1HGpgHAdGyqBXkQ';
+            const spreadsheetId = '1F5voYTnm3e-1h3iulQf4TXdHi9__u6WJTQe15l_haZ0';
             const range = 'Sheet1!A1:B20';
+            
+            const apiUrl = `https://sheets.googleapis.com/v4/spreadsheets/${spreadsheetId}/values/${range}?key=${apiKey}`;
 
-            const apiUrl = `https://sheets.googleapis.com/v4/spreadsheets/${1F5voYTnm3e-1h3iulQf4TXdHi9__u6WJTQe15l_haZ0}/values/${Sheet1!A1:B20}?key=${AIzaSyBKTs08rp18jacSVRdE1HGpgHAdGyqBXkQ}`;
 
             return fetch(apiUrl)
                 .then(response => response.json())
