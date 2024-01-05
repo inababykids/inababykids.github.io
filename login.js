@@ -29,7 +29,7 @@ function validateLogin(event) {
         // Token akses sekarang dapat digunakan untuk mengakses Spreadsheet API
         oAuth2Client.setCredentials(token);
 
-        // Implementasikan logika akses ke Spreadsheet API di sini
+        // Implementasikan logika akses ke Spreadsheet API di sini 
         const sheets = google.sheets({ version: 'v4', auth: oAuth2Client });
         sheets.spreadsheets.values.get({
             spreadsheetId: spreadsheetId,
