@@ -3,8 +3,6 @@ function checkAuthentication() {
 
     if (!isAuthenticated) {
         window.location.href = '/login.html';
-    } else {
-        window.location.href = '/index.html';
     }
 }
 
