@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function() {
     var logoutButton = document.getElementById('logoutButton');
     if (logoutButton) {
         logoutButton.addEventListener('click', function() {
-            // Memanggil fungsi logout jika tombol logout ditemukan
+
             logout();
         });
     }
