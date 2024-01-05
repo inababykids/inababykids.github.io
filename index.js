@@ -5,6 +5,9 @@ function checkAuthentication() {
         window.location.href = '/login.html';
     }
 }
+document.getElementById('logoutButton').addEventListener('click', function() {
+    logout();
+});
 
 document.addEventListener('DOMContentLoaded', function() {
     checkAuthentication();
