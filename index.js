@@ -1,13 +1,13 @@
+function logout() {
+    localStorage.removeItem('sessionToken');
+
+    window.location.href = '/login.html';
+}
+
 function checkAuthentication() {
     var isAuthenticated = localStorage.getItem('sessionToken') !== null;
 
     if (!isAuthenticated) {
-        window.location.href = '/login.html';
-    }
-
-    function logout() {
-        localStorage.removeItem('sessionToken');
-
         window.location.href = '/login.html';
     }
 }
