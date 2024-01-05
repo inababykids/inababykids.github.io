@@ -4,7 +4,14 @@ function checkAuthentication() {
     if (!isAuthenticated) {
         window.location.href = '/login.html';
     }
+
+    function logout() {
+        localStorage.removeItem('sessionToken');
+
+        window.location.href = '/login.html';
+    }
 }
+
 document.getElementById('logoutButton').addEventListener('click', function() {
     logout();
 });
